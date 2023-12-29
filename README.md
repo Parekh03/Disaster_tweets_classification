@@ -58,10 +58,10 @@ Tensorflow has a dedicated tool called as [**Embedding Projector**](https://proj
 
 ![image](https://github.com/Parekh03/Disaster_tweets_classification/assets/110220047/e715a1e0-24f7-4558-8c2a-e1763cdf8a32)
 
-Moreover, I got to understand about the concept of **Data Leakage** while I was creating a 10% subset of training data for Universal Sentence Encoder (Model 7), and the need to resolve it. The process of addressing this issue has been included in the interactive notebook.
+Moreover, I got to understand about the concept of **Data Leakage** while creating a 10% subset of training data for Universal Sentence Encoder (Model 7), and the need to resolve it. The process of addressing this issue has been included in the interactive notebook.
 
 ## 4. Results
-It is found that the **Universal Sentence Encoder (Model - 6)** performs the best among the other models when evaluated on the following evaluation metrics:
+It has been found that the **Universal Sentence Encoder (Model - 6)** performs the best among the other models when evaluated on the following evaluation metrics:
 
 **Accuracy - 82%**
 
