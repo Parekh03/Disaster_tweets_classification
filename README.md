@@ -48,7 +48,7 @@ In this step, text vectorizer and embedding layer with proper required parameter
 
 **Model 7** - Universal Sentence Encoder trained on 10% of data
 
-**All the above mentioned models were create using the [Functional API](https://www.tensorflow.org/guide/keras/functional_api), except for the models involving Universal Sentence Encoder which were created using the [Sequential API](https://www.tensorflow.org/guide/keras/sequential_model)**.
+**All the above mentioned models were created using the [Functional API](https://www.tensorflow.org/guide/keras/functional_api), except for the models involving Universal Sentence Encoder which were created using the [Sequential API](https://www.tensorflow.org/guide/keras/sequential_model)**.
 
 ### Insights:
 
