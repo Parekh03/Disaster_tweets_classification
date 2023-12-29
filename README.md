@@ -16,11 +16,11 @@ The dataset used is publicly available in the Kaggle, and can be accessed here :
 
 ## Steps involved:
 ### 1. Data Loading and Pre-processing
-In this step, I had first imported the necessary libraries and aftert hat loaded the dataset - train.csv and test.csv
+All the necessary librarier were imported followed by loading the data - train.csv and test.csv.
 
 Also, thorough visualisation of text and targets was done to get familiar with the data to be used for modelling purposes.
 
-After that, I had further divided/splited the whole train data into train data (train_sentences and train_labels) and validation data (valid_sentences, valid_labels)
+After that, further splitting of the whole train data into train data (train_sentences and train_labels) and validation data (valid_sentences, valid_labels) was performed.
 
 ### 2. Text Vectorization and Embedding
 
@@ -28,7 +28,7 @@ After that, I had further divided/splited the whole train data into train data (
 
 **Embedding** - A process of turning positive integers (indexes) into dense vectors of fixed size which can be updated while training the models. (Similar to weights).
 
-In this step, I had set up the text vectorizer and embedding layer with proper required parameters like max_tokens, output_sequence_length, input_dim, ect and fit (adapt) both of them to the training sentences.
+In this step, text vectorizer and embedding layer with proper required parameters like max_tokens, output_sequence_length, input_dim, etc, were created and made to fit(adapt) on the training sentences.
 
 ### 3. Modelling Experiments
 
@@ -50,18 +50,18 @@ In this step, I had set up the text vectorizer and embedding layer with proper r
 
 ### Insights:
 
-While I was performing the modelling experiments, I got to learn about the way to visually understand the embeddings. 
+While performing the modelling experiments, I got to learn about the way to visually understand the embeddings. 
 
-Tensorflow has a dedicated tool called as [**Embedding Projector**](https://projector.tensorflow.org/) which allows us to visually see the embedding weights the model has learned or updated. This tool required two files namely - **vectors.tsv** and **metadata.tsv**(optional).
+Tensorflow has a dedicated tool called as [**Embedding Projector**](https://projector.tensorflow.org/) which allows us to visually see the embedding weights the model has learned or updated. This tool requires two files namely - **vectors.tsv** and **metadata.tsv** (optional).
 
-**The following image shows the Embedding weights of Simple Dense Model**
+**The following image shows the Embedding weights of Simple Dense Model** (Model - 1)
 
 ![image](https://github.com/Parekh03/Disaster_tweets_classification/assets/110220047/e715a1e0-24f7-4558-8c2a-e1763cdf8a32)
 
-Moreover, I got to understand about the concept of **Data Leakage** while I was creating a 10% subset of training data for Universal Sentence Encoder (Model 7), and the need to resolve it.
+Moreover, I got to understand about the concept of **Data Leakage** while I was creating a 10% subset of training data for Universal Sentence Encoder (Model 7), and the need to resolve it. The process of addressing this issue has been included in the interactive notebook.
 
 ## 4. Results
-The Universal Sentence Encoder performs the best among the other models when evaluated on the following evaluation metrics:
+It is found that the **Universal Sentence Encoder (Model - 6)** performs the best among the other models when evaluated on the following evaluation metrics:
 
 **Accuracy - 82%**
 
@@ -75,7 +75,7 @@ The Universal Sentence Encoder performs the best among the other models when eva
 
 ## 5. Saving the best model
 
-Saving the Universal Sentence Encoder in both the formats (HDF% and SavedModel format) for future use.
+The Universal Sentence Encoder Model (Model - 6) was then saved in both HDF5 and SavedModel formats, for future use.
 
 ## 6. Making Predictions using the saved model
 
@@ -94,12 +94,13 @@ Saving the Universal Sentence Encoder in both the formats (HDF% and SavedModel f
 
 ## References/Resources
 
-**I am really thankful to the following mentioned resources which have enabled me to learn about Introductory Natural Language Processing and have helped me build various NLP Models with conceptual clarity**
+**I am really thankful to the following mentioned resources which have enabled me to learn about the basics of Natural Language Processing and have helped me build various NLP Models with conceptual clarity**
 1. [Udemy - Tensorflow Developer Certificate](https://www.udemy.com/course/tensorflow-developer-certificate-machine-learning-zero-to-mastery/?kw=tensorflow+developer+certif&src=sac)
 2. [MIT's video lecture on NLP](https://youtu.be/ySEx_Bqxvvo?si=-2BwahPRE4imhwiP)
 3. [Tensorflow's documentation](https://www.tensorflow.org/)
 4. [The Unreasonable Effectiveness of Recurrent Neural Networks](https://karpathy.github.io/2015/05/21/rnn-effectiveness/)
 5. [Understanding LSTMs](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)
+6. [Understanding TF-IDF](https://monkeylearn.com/blog/what-is-tf-idf/)
 
 
 
