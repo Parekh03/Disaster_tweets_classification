@@ -16,7 +16,7 @@ The dataset used is publicly available in the Kaggle, and can be accessed here :
 
 ## Steps involved:
 ### 1. Data Loading and Pre-processing
-All the necessary librarier were imported followed by loading the data - train.csv and test.csv.
+All the necessary libraries were imported followed by loading the data - train.csv and test.csv.
 
 Also, thorough visualisation of text and targets was done to get familiar with the data to be used for modelling purposes.
 
